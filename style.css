@@ -52,3 +52,33 @@ nav a:hover {
 .button:hover {
   background: #c71585;
 }
+
+.main-photo {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  display: block;
+  margin: 20px auto;
+}
+
+.section-photo {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  display: block;
+  margin: 15px auto;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px;
+  border: 3px solid #db7093;
+}
+
+.insta-block {
+  text-align: center;
+  margin: 20px 0;
+}
