@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EngLight</title>
+    <title>ENGLight</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,100 +20,26 @@
             padding: 20px;
         }
 
+        /* Заголовок с фоном */
+        header {
+            text-align: center;
+            background-color: #F8B8D0; /* Розовый фон */
+            padding: 60px 0;
+            color: white;
+        }
+
         h1 {
-            text-align: center;
-            color: #F8B8D0;
-            font-size: 60px;
-            margin-top: 40px;
+            font-size: 70px;
         }
 
-        /* Навигация */
-        .nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 40px;
+        h2 {
+            font-size: 30px;
         }
 
-        .nav a {
-            font-size: 20px;
-            text-decoration: none;
-            color: #F8B8D0;
-        }
-
-        .nav a:hover {
-            text-decoration: underline;
-        }
-
-        .contact {
-            margin-top: 30px;
-            text-align: center;
-        }
-
-        .contact p {
-            font-size: 24px;
-        }
-
-        .contact a {
-            color: #F8B8D0;
-            text-decoration: none;
-        }
-
-        .about {
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        .about p {
-            font-size: 28px;
-            line-height: 1.6;
-        }
-
-        .image {
-            display: block;
+        /* Фото проекта */
+        .project-photo {
+            width: 100%;
+            max-width: 800px;
             margin: 30px auto;
-            width: 50%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <h1>EngLight</h1>
-
-        <!-- Навигация -->
-        <div class="nav">
-            <a href="index.html">Главная</a>
-            <a href="reading.html">Reading</a>
-            <a href="listening.html">Listening</a>
-            <a href="vocabulary.html">Vocabulary</a>
-        </div>
-
-        <!-- Контакты -->
-        <div class="contact">
-            <p><strong>Founders Instagram:</strong> 
-                <a href="https://instagram.com/arua.777" target="_blank">@arua.777</a>, 
-                <a href="https://instagram.com/abcdqwc" target="_blank">@abcdqwc</a>
-            </p>
-            <p><strong>Телеграм-канал:</strong> 
-                <a href="https://t.me/englishlightwithus" target="_blank">@englishlightwithus</a>
-            </p>
-            <p><strong>Описание канала:</strong> Канал для поддержки учеников и предоставления полезных материалов для улучшения английского языка.</p>
-        </div>
-
-        <!-- Информация о проекте -->
-        <div class="about">
-            <h2>Информация о проекте</h2>
-            <p>Этот сайт создан для того, чтобы улучшить знания английского языка, делая процесс обучения интересным и познавательным.</p>
-        </div>
-
-        <!-- Фото проекта -->
-        <div>
-            <img class="image" src="https://lh3.googleusercontent.com/rd-saves/AA8Ys27yi6V3mUPkHgmp6g7BOVvgdG3PAz0Rsfp7beQJYhyhzGvJz-O4ZZnFaEuIigFf_eJVUQ_ws7Xh3XEMoiTIGF9jOdGdpYbEfURqtTJ8RVliyx7jkxJfNiq6ZtvIT0SBYY56xdKF0hjRKlSFHUPdG-WRTvUSONHEj3ngTK9vpjbUP6UmPaqX_pjngLGcqtQjsk7TCKjsjNgyC8XwLaNwmTSVeWmBqXM6SOm0V2SA7JookxGRH54SgisNCvwll1fHZcJP75sw9BB9lshdRo8mTXciV6Stp8W6x6oMr2iXszIvK_wBavxK2ms1cxbIM9MHROSDerIX6mYap-bC96e2J3FY8aEs0YCKL6Sw1uuiix8sIUyznWgsJ5PEpP_HaQHqBRmNfLI2TEaTq0LCcWogKb9fF-7ogVMGxq4JNvZ9Jce8_LJKQdLsZCbm0giZNtrhRBalMvdeUp0yrmPMMivGmm7rKk1ab8hdlkci-6mWG7v5Qw_IdQg2qh9Rr9kel7DMeLd-npM4biungeLe41WtvrV9ufPWXZB43w_G7ioKS6-OZOU-Db___4qIwFHnn42xi-_IEjAFj-RjBjpO78Jg2Xu8ComTJ65vl1pRJjujyhPFO7oE0-MwyuP45WFGfFJHWh1RPfrwm86iRilOi0rqnvd0ppXnyHepDLe-E9pKP8Wn6jEZpIDpEN5ZTmvtZZdVq7U8DN_Cnm7NXau69jWHbK6pOm6LBGOf5SmE1ht_F_xmpsNuK_iM3TiwltribX57JRZU9lPNmNx3SSsUrodL3mSV4spRcIvlFbFLbwxGuKeKAnW2SOr6BbHzsLY1qlcG530Q7X_FwMCVIiFuVnx4EPeo63C4JDqWFk-f8IFRDaExhqkSi4i5i6SNbQKVWfFiWbfou_SyoiHKjP8SOckfZC0SO2F6zD5f9goYiZmarR25cpYXyWx76-VB76Od3cUTncaIiSu2gqR-wUvT2Am7MFX0lP7YMrqznurgFbQ80DKG5PgN2xen8oxOcLqfI8ExcQs-9B_VWlSe25CTbGC4_C_0_5n6KqJN5cTQ_dhAaitBNTBtzdwnZl9_EeqwUjrEMX8N3IjwDJD_FsqNh0ipxVlFGOqDjy-PV8hv3LLQLTBANHC-qRIocIWMqdVPEJqYhZHu=s720-w720-h720-n-k" alt="Фото проекта">
-        </div>
-
-    </div>
-
-</body>
-</html>
+            display: block;
+            border-radius: 8px;
