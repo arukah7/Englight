@@ -1,10 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EngLight - сайт для улучшения знаний английского языка через чтение, прослушивание и практику слов.">
+    <meta name="keywords" content="английский язык, изучение языка, практика английского, EngLight">
     <title>EngLight - Main</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .contacts {
+            background-color: #ffefef;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contacts h3 {
+            font-size: 1.8rem;
+            color: #ffcc80;
+        }
+
+        .contacts a {
+            text-decoration: none;
+            color: #ff80b3;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .contacts a:hover {
+            color: #f8a9d3;
+        }
+
+        .contact-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-links li {
+            margin: 10px 0;
+        }
+
+        .project-image img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,20 +67,18 @@
                 <li><a href="./reading.html">Reading</a></li>
                 <li><a href="./listening.html">Listening</a></li>
                 <li><a href="./vocabulary.html">Vocabulary</a></li>
-
             </ul>
         </nav>
     </header>
     
     <section class="main-content">
-        <h2>Учите английский легко и интересно!</h2>
+        <h2 class="fade-in">Учите английский легко и интересно!</h2>
         <p>С EngLight процесс обучения станет увлекательным и понятным.</p>
-        <button>Начать обучение</button>
+        <a href="start.html"><button>Начать обучение</button></a>
     </section>
 
-    <!-- Информация о проекте -->
     <section class="project-info">
         <h2>Информация про наш проект - ENGLIGHT</h2>
         <p>Этот сайт создан для того, чтобы улучшить знания языка интересным и познавательным способом. Мы предлагаем эффективные методы для практики английского, которые включают чтение, прослушивание и изучение слов. Мы верим, что обучение может быть увлекательным и разнообразным!</p>
         <div class="project-image">
-            <img src="https://lh3.googleusercontent.com/rd-saves/AA8Ys27yi6V3mUPkHgmp6g7BOVvgdG3PAz0Rsfp7beQJYhyhzGvJz-O4ZZnFaEuIigFf_eJVUQ_ws7Xh3XEMoiTIGF9jOdGdpYbEfURqtTJ8RVliyx7jkxJfNiq6ZtvIT0SBYY56xdKF0hjRKlSFHUPdG-WRTvUSONHEj3ngTK9vpjbUP6UmPaqX_pjngLGcqtQjsk7TCKjsjNgyC8XwLaNwmTSVeWmBqXM6SOm0V2SA7JookxGRH54SgisNCvwll1fHZcJP75sw9BB9lshdRo8mTXciV6Stp8W6x6oMr2iXszIvK_wBavxK2ms1cxbIM9MHROSDerIX6mYap-bC96e2J3FY8aEs0YCKL6Sw1uuiix8sIUyznWgsJ5PEpP_HaQHqBRm_
+            <img src="https://lh3.googleusercontent.com/rd-saves/AA8Ys27yi6V3mUPkHgmp6g7BOVvgdG3PAz0Rsfp7beQJYhyhzGvJz-O4ZZnFaEuIigFf_eJVUQ_ws7Xh3XEMoiTIGF9jOdGdpYbEfURqtTJ8RVliyx7jkxJfNiq6ZtvIT0SBYY56xdKF0hjRKlSFHUPdG-WRTvUSONHEj3ngTK9vpjbUP6UmPaqX_pjngLGcqtQjsk7TCKjsjNgyC8XwLaNwmTSVeWmBqXM6SOm0V2SA7JookxGRH54SgisNCvwll1fHZcJP75sw9BB9lshdRo8mTXciV6Stp8W6x6oMr2iXszIvK_wBavxK2ms1cxbIM9MHROSDerIX6mYap-bC96e2J3FY8aEs0YCKL6Sw1uuiix8sIUyznWgsJ5PEpP_HaQHqBRmNfLI2TEaTq0LCcWogKb9fF-7ogVMGxq4JNvZ9Jce8_LJKQdLsZCbm0giZNtrhRBalMvdeUp0yrmPMMivGmm7rKk1ab8hdlkci-6mWG7v5Qw_IdQg2qh9Rr9kel7DMeLd-npM4biungeLe41WtvrV9ufPWXZB43w_G7ioKS6-OZOU-Db___4qIwFHnn42xi-_IEjAFj-RjBjpO78Jg2Xu8ComTJ65vl1pRJjujyhPFO7oE0-MwyuP45WFGfFJHWh1RPfrwm86iRilOi0rqnvd0ppXnyHepDLe-E9pKP8Wn6jEZpIDpEN5ZTmvtZZdVq7U8DN_Cnm7NXau69jWHbK6pOm6LBGOf5SmE1ht_F_xmpsNuK_iM3TiwltribX57JRZU9lPNmNx3SSsUrodL3mSV4spRcIvlFbFLbwxGuKeKAnW2SOr6BbHzsLY1qlcG530Q7X_FwMCVIiFuVnx4EPeo63C4JDqWFk-f8IFRDaExhqkSi4i5i6SNbQKVWfFiWbfou_SyoiHKjP8SOckfZC0SO2F6zD5f9goYiZmarR25cpYXyWx76-VB76Od3cUTncaIiSu2gqR-wUvT2Am7MFX0lP7YMrqznurgFbQ80DKG5PgN2xen8oxOcLqfI8ExcQs-9B_V
