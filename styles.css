@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fdd9d9;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #f8c1c1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #f8c1c1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc80;
+}
+
+footer {
+    background-color: #fdd9d9;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.reading-section, .listening-section, .vocabulary-section {
+    padding: 20px;
+}
+
+h2 {
+    color: #f8c1c1;
+    font-size: 1.8em;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+audio, video {
+    display: block;
+    margin: 20px auto;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+ul li {
+    padding: 5px;
+    font-size: 1.1em;
+}
