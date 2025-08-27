@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Light With Us - Main</title>
+    <title>EngLight - Main</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Основной фон */
@@ -15,9 +15,24 @@
             padding: 0;
         }
 
+        /* Анимации */
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
         /* Заголовки и основной текст */
         h1, h2, h3, h4, h5, h6 {
-            color: #ff80b3; /* Розовый цвет для заголовков */
+            color: #ffdb58; /* Яркий желтый цвет для заголовков */
+        }
+
+        h2, h3 {
+            font-size: 1.8rem;
+            color: #ffdb58;
         }
 
         /* Кнопка */
@@ -43,11 +58,9 @@
             text-align: center;
         }
 
-        /* Название проекта */
         header h1 {
             font-size: 2.5rem;
-            font-weight: bold;
-            color: #ffcc00; /* Жёлтый цвет для названия */
+            color: #ffdb58; /* Яркий желтый цвет для названия проекта */
         }
 
         header nav ul {
@@ -64,6 +77,7 @@
             color: white;
             text-decoration: none;
             font-size: 1.2rem;
+            transition: color 0.3s ease;
         }
 
         header nav ul li a:hover {
@@ -78,8 +92,22 @@
         }
 
         .project-info h2 {
-            font-size: 1.8rem;
-            color: #ff80b3;
+            font-size: 2rem;
+            color: #ffdb58;
+        }
+
+        .project-info p {
+            font-size: 1.1rem;
+            margin: 20px 0;
+        }
+
+        .project-image img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            animation: fadeIn 2s ease-out;
         }
 
         /* Секция контактов */
@@ -94,7 +122,7 @@
 
         .contacts h3 {
             font-size: 1.8rem;
-            color: #ff80b3; /* Розовый цвет для подзаголовков */
+            color: #ffdb58; /* Яркий желтый цвет для подзаголовков */
         }
 
         .contacts a {
@@ -130,11 +158,32 @@
             text-align: center;
             margin: 0 20px;
         }
+
+        /* Стили для видео и аудио */
+        .media-content {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .media-content video,
+        .media-content audio {
+            max-width: 100%;
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #ffdb58; /* Яркий желтый для разделов */
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-out;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>English Light With Us</h1> <!-- Изменено название проекта -->
+        <h1>English Light With Us</h1> <!-- Название проекта -->
         <nav>
             <ul>
                 <li><a href="./index.html">Main</a></li>
@@ -144,25 +193,25 @@
             </ul>
         </nav>
     </header>
-    
+
     <section class="main-content">
-        <h2>Учите английский легко и интересно!</h2>
-        <p>С Englight процесс обучения станет увлекательным и понятным.</p>
+        <h2 class="fade-in">Учите английский легко и интересно!</h2>
+        <p>С EngLight процесс обучения станет увлекательным и понятным.</p>
         <button>Начать обучение</button>
     </section>
 
     <!-- Информация о проекте -->
     <section class="project-info">
-        <h2>Информация про наш проект</h2>
+        <h2 class="fade-in">Информация про наш проект</h2>
         <p>Этот сайт создан для того, чтобы улучшить знания языка интересным и познавательным способом. Мы предлагаем эффективные методы для практики английского, которые включают чтение, прослушивание и изучение слов. Мы верим, что обучение может быть увлекательным и разнообразным!</p>
-        <div class="project-image">
+        <div class="project-image fade-in">
             <img src="https://lh3.googleusercontent.com/rd-saves/AA8Ys27yi6V3mUPkHgmp6g7BOVvgdG3PAz0Rsfp7beQJYhyhzGvJz-O4ZZnFaEuIigFf_eJVUQ_ws7Xh3XEMoiTIGF9jOdGdpYbEfURqtTJ8RVliyx7jkxJfNiq6ZtvIT0SBYY56xdKF0hjRKlSFHUPdG-WRTvUSONHEj3ngTK9vpjbUP6UmPaqX_pjngLGcqtQjsk7TCKjsjNgyC8XwLaNwmTSVeWmBqXM6SOm0V2SA7JookxGRH54SgisNCvwll1fHZcJP75sw9BB9lshdRo8mTXciV6Stp8W6x6oMr2iXszIvK_wBavxK2ms1cxbIM9MHROSDerIX6mYap-bC96e2J3FY8aEs0YCKL6Sw1uuiix8sIUyznWgsJ5PEpP_HaQHqBRmNfLI2TEaTq0LCcWogKb9fF-7ogVMGxq4JNvZ9Jce8_LJKQdLsZCbm0giZNtrhRBalMvdeUp0yrmPMMivGmm7rKk1ab8hdlkci-6mWG7v5Qw_IdQg2qh9Rr9kel7DMeLd-npM4biungeLe41WtvrV9ufPWXZB43w_G7ioKS6-OZOU-Db___4qIwFHnn42xi-_IEjAFj-RjBjpO78Jg2Xu8ComTJ65vl1pRJjujyhPFO7oE0-MwyuP45WFGfFJHWh1RPfrwm86iRilOi0rqnvd0ppXnyHepDLe-E9pKP8Wn6jEZpIDpEN5ZTmvtZZdVq7U8DN_Cnm7NXau69jWHbK6pOm6LBGOf5SmE1ht_F_xmpsNuK_iM3TiwltribX57JRZU9lPNmNx3SSsUrodL3mSV4spRcIvlFbFLbwxGuKeKAnW2SOr6BbHzsLY1qlcG530Q7X_FwMCVIiFuVnx4EPeo63C4JDqWFk-f8IFRDaExhqkSi4i5i6SNbQKVWfFiWbfou_SyoiHKjP8SOckfZC0SO2F6zD5f9goYiZmarR25cpYXyWx76-VB76Od3cUTncaIiSu2gqR-wUvT2Am7MFX0lP7YMrqznurgFbQ80DKG5PgN2xen8oxOcLqfI8ExcQs-9B_VWlSe25CTbGC4_C_0_5n6KqJN5cTQ_dhAaitBNTBtzdwnZl9_EeqwUjrEMX8N3IjwDJD_FsqNh0ipxVlFGOqDjy-PV8hv3LLQLTBANHC-qRIocIWMqdVPEJqYhZHu=s720-w720-h720-n-k" alt="Project Image">
         </div>
     </section>
 
     <!-- Контакты -->
     <section class="contacts">
-        <h3>Contacts</h3>
+        <h3 class="fade-in">Contacts</h3>
         <ul class="contact-links">
             <li>Founders Instagram: 
                 <a href="https://www.instagram.com/arua.777" target="_blank">@arua.777</a>, 
@@ -176,7 +225,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Все права защищены.</p>
+        <p>&copy; 2025 EngLight. Все права защищены.</p>
     </footer>
 </body>
 </html>
