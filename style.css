@@ -10,31 +10,15 @@ body {
 
 /* Заголовок */
 .main-title {
-  font-size: 48px;
+  font-size: 56px;
   font-weight: bold;
   color: #e75480;
-  margin-top: 30px;
-}
-
-/* Описание */
-.description {
-  font-size: 22px;
-  margin: 20px auto;
-  width: 80%;
-  line-height: 1.6;
-}
-
-/* Фото проекта */
-.project-photo img {
-  width: 250px;
-  height: 250px;
-  border-radius: 20px;
-  margin: 20px 0;
+  margin: 30px 0 10px;
 }
 
 /* Навигация */
 nav {
-  margin: 30px 0;
+  margin: 20px 0 40px;
 }
 
 nav .btn {
@@ -42,10 +26,10 @@ nav .btn {
   text-decoration: none;
   background: #ff7bac;
   color: white;
-  padding: 15px 25px;
+  padding: 20px 35px;
   margin: 10px;
-  border-radius: 10px;
-  font-size: 22px;
+  border-radius: 12px;
+  font-size: 28px;
   transition: 0.3s;
 }
 
@@ -53,31 +37,56 @@ nav .btn:hover {
   background: #ff4f85;
 }
 
+/* Описание */
+.description {
+  font-size: 24px;
+  margin: 20px auto;
+  width: 85%;
+  line-height: 1.8;
+}
+
+.description h2 {
+  font-size: 32px;
+  color: #ff4f85;
+}
+
+/* Фото проекта */
+.project-photo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 25px 0;
+  object-fit: cover;
+}
+
 /* Контакты */
 .contacts {
   margin-top: 30px;
   padding: 20px;
   background: #fff;
-  border-radius: 10px;
-  width: 80%;
+  border-radius: 15px;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .contacts h2 {
-  font-size: 28px;
+  font-size: 30px;
   color: #e75480;
+  margin-bottom: 10px;
 }
 
 .contacts p {
-  font-size: 20px;
+  font-size: 24px;
 }
+
 .contacts a {
   color: #e75480;
   text-decoration: none;
   font-weight: bold;
 }
+
 .contacts a:hover {
   text-decoration: underline;
-    }
+  }
