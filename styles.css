@@ -155,3 +155,10 @@ button:hover {
         padding: 30px 10px;
     }
 }
+.project-image img {
+    width: 100%;
+    height: auto;
+    max-width: 900px; /* Установить максимальную ширину */
+    margin: 0 auto;
+    border-radius: 15px; /* Сделать углы изображения округлыми */
+}
