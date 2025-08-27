@@ -9,12 +9,37 @@ body {
 
 /* Заголовки и основной текст */
 h1, h2, h3, h4, h5, h6 {
-    color: #ff80b3; /* Розовый цвет для заголовков */
+    color: #ffdb58; /* Яркий желтый цвет для заголовков */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Тень для заголовков */
+    font-weight: bold;
 }
 
-/* Кнопка */
+/* Заголовок проекта */
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Стили для разделов */
+section {
+    padding: 40px;
+    margin: 20px 0;
+}
+
+/* Для ссылок в меню */
+header nav ul li a {
+    color: #ffdb58; /* Яркий желтый для ссылок */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ffb300; /* Немного более насыщенный желтый при наведении */
+}
+
+/* Стили для кнопок */
 button {
-    background-color: #ff80b3; /* Розовый цвет кнопки */
+    background-color: #ffdb58; /* Яркий желтый цвет кнопки */
     color: #fff; /* Белый текст на кнопке */
     border: none;
     padding: 10px 20px;
@@ -24,85 +49,54 @@ button {
 }
 
 button:hover {
-    background-color: #ff4d94; /* Более насыщенный розовый при наведении */
+    background-color: #ffb300; /* Более насыщенный желтый при наведении */
 }
 
-/* Секции */
-header {
-    background-color: #ff80b3; /* Розовый фон для шапки */
-    color: white;
-    padding: 20px 0;
+/* Секции с текстом */
+section h2, section h3 {
+    color: #ffdb58; /* Яркий желтый цвет для заголовков внутри секций */
     text-align: center;
+    margin-bottom: 20px;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-header nav ul li a:hover {
-    color: #ff4d94;
-}
-
-/* Секция с информацией о проекте */
-.project-info {
-    padding: 20px;
+/* Стили для секции контента */
+section.listening-content {
+    background-color: #f9f9f9;
     text-align: center;
+    animation: fadeIn 1.5s ease-in-out; /* Анимация плавного появления */
 }
 
-.project-info h2 {
-    font-size: 1.8rem;
-    color: #ff80b3;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-/* Секция контактов */
-.contacts {
-    background-color: #ffeff0; /* Очень светлый розовый для фона контактов */
-    padding: 20px;
-    margin-top: 40px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.contacts h3 {
-    font-size: 1.8rem;
-    color: #ff80b3; /* Розовый цвет для подзаголовков */
-}
-
-.contacts a {
-    text-decoration: none;
-    color: #ff80b3; /* Розовый для ссылок */
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.contacts a:hover {
-    color: #ff4d94; /* Немного темнее розовый при наведении */
-}
-
-.project-image img {
+/* Стили для аудио и видео */
+audio, video {
     width: 100%;
     max-width: 600px;
-    height: auto;
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Плавная трансформация при наведении */
+}
+
+audio:hover, video:hover {
+    transform: scale(1.05); /* Немного увеличиваем размер */
 }
 
 /* Футер */
 footer {
     background-color: #ff80b3;
     color: white;
-    padding: 10px;
     text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
 }
