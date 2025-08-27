@@ -5,79 +5,153 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff0f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
     color: #333;
     line-height: 1.6;
+    font-size: 16px;
+    margin: 0;
 }
 
 header {
-    background-color: #fdd9d9;
-    padding: 20px;
+    background: linear-gradient(135deg, #ffccff, #f8a9d3);
+    color: #fff;
+    padding: 40px 20px;
     text-align: center;
+    border-bottom: 5px solid #f8c1c1;
 }
 
 header h1 {
-    font-size: 2.5em;
-    color: #f8c1c1;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
-nav ul {
-    list-style-type: none;
-    margin-top: 15px;
+header nav ul {
+    list-style: none;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+header nav ul li {
+    margin: 0 15px;
 }
 
-nav ul li a {
-    color: #f8c1c1;
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
+    font-size: 1.2rem;
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     color: #ffcc80;
 }
 
 footer {
-    background-color: #fdd9d9;
+    background-color: #f8a9d3;
+    color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+.main-content, .reading-section, .listening-section, .vocabulary-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.main-content h2, .reading-section h2, .listening-section h2, .vocabulary-section h2 {
+    color: #ffcc80;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+section h3 {
+    color: #f8a9d3;
+    font-size: 1.8rem;
     margin-top: 20px;
 }
 
-.main-content {
-    padding: 20px;
-    text-align: center;
+article p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    margin-top: 15px;
 }
 
-.reading-section, .listening-section, .vocabulary-section {
-    padding: 20px;
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
 }
 
-h2 {
-    color: #f8c1c1;
-    font-size: 1.8em;
+ul li {
+    font-size: 1.1rem;
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
 }
 
-article {
-    margin-bottom: 20px;
+ul li:last-child {
+    border: none;
 }
 
 audio, video {
     display: block;
     margin: 20px auto;
+    border-radius: 8px;
 }
 
-ul {
-    list-style-type: none;
-    margin-top: 10px;
+button {
+    background-color: #ffcc80;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-ul li {
-    padding: 5px;
-    font-size: 1.1em;
+button:hover {
+    background-color: #ff9800;
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .main-content, .reading-section, .listening-section, .vocabulary-section {
+        padding: 30px 10px;
+    }
 }
