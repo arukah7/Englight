@@ -1,92 +1,34 @@
-<!DOCTYPE html>
-<html lang="ru">
+   <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>English Learning</title>
+  <title>ENGLIGHT - Главная</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fff5f8;
-      color: #333;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    nav {
-      background: #f8c8d8;
-      padding: 15px;
-    }
-    nav a {
-      margin: 0 20px;
-      text-decoration: none;
-      color: #a1004f;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    h1 {
-      margin-top: 20px;
-      color: #a1004f;
-    }
-    section {
-      margin: 30px auto;
-      max-width: 800px;
-      text-align: left;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      display: none; /* Скрыто по умолчанию */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .active {
-      display: block;
-    }
-    .section-title {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-  </style>
 </head>
 <body>
+  <h1>ENGLIGHT</h1>
+  <p>Этот сайт создан для того, чтобы улучшить знания английского языка интересным и познавательным способом.</p>
 
-  <h1>Welcome to Our English Learning Site</h1>
-  <p>Мы — команда, которая помогает учить английский легко и интересно!</p>
+  <!-- Фото проекта -->
+  <img src="project-photo.jpg" alt="Фото проекта" width="300">
 
+  <!-- Навигация -->
   <nav>
-    <a onclick="showSection('reading')">Reading</a>
-    <a onclick="showSection('vocabulary')">Vocabulary</a>
-    <a onclick="showSection('listening')">Listening</a>
+    <a class="btn" href="reading.html">Reading</a>
+    <a class="btn" href="listening.html">Listening</a>
+    <a class="btn" href="vocabulary.html">Vocabulary</a>
   </nav>
 
-  <!-- Reading Section -->
-  <section id="reading">
-    <h2 class="section-title">📖 Reading</h2>
-    <p>Текст 1: How to learn English effectively.</p>
-    <p>Текст 2: Reading improves your vocabulary.</p>
+  <!-- Контакты -->
+  <section>
+    <h2>Контакты</h2>
+    <p>Founders Instagram👥: 
+      <a href="https://instagram.com/arua.777" target="_blank">@arua.777</a>, 
+      <a href="https://instagram.com/abcdqwc" target="_blank">@abcdqwc</a>
+    </p>
+    <p>Telegram канал🗣️: 
+      <a href="https://t.me/englishlightwithus" target="_blank">@englishlightwithus</a>
+    </p>
   </section>
-
-  <!-- Vocabulary Section -->
-  <section id="vocabulary">
-    <h2 class="section-title">📚 Vocabulary</h2>
-    <p>Word 1: Apple – Яблоко</p>
-    <p>Word 2: Improve – Улучшать</p>
-  </section>
-
-  <!-- Listening Section -->
-  <section id="listening">
-    <h2 class="section-title">🎧 Listening</h2>
-    <p>Аудио 1: English podcast for beginners.</p>
-    <p>Аудио 2: Daily conversations.</p>
-  </section>
-
-  <script>
-    function showSection(sectionId) {
-      // Скрыть все секции
-      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
-      // Показать выбранную
-      document.getElementById(sectionId).classList.add('active');
-    }
-  </script>
-
 </body>
-  </html>
+</html>
