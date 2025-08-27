@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary | EngLight</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #F8B8D0;
+            font-size: 60px;
+            margin-top: 40px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .nav a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #F8B8D0;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .vocab-list {
+            margin-top: 50px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .vocab-list li {
+            font-size: 20px;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .vocab-list li a {
+            color: #F8B8D0;
+            text-decoration: none;
+        }
+
+        .vocab-list li a:hover {
+            text-decoration: underline;
+        }
+
+        .add-word {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .add-word input {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+            width: 200px;
+        }
+
+        .add-word button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #F8B8D0;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .add-word button:hover {
+            background-color: #F1A1C1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Vocabulary</h1>
+
+        <!-- Навигация -->
+        <div class="nav">
+            <a href="index.html">Главная</a>
+            <a href="reading.html">Reading</a>
+            <a href="listening.html">Listening</a>
+            <a href="vocabulary.html">Vocabulary</a>
+        </div>
+
+        <h2>Список слов</h2>
+        <ul class="vocab-list">
+            <li>
+                <span>Word 1</span> - <a href="https://quizlet.com" target="_blank">Quizlet</a>
+            </li>
+            <li>
+                <span>Word 2</span> - <a href="https://quizlet.com" target="_blank">Quizlet</a>
+            </li>
+            <!-- Новые слова добавляются сюда -->
+        </ul>
+
+        <!-- Форма для добавления нового слова -->
+        <div class="add-word">
+            <h3>Добавить новое слово</h3>
+            <input type="text" id="newWord" placeholder="Введите слово">
+            <input type="text" id="quizletLink" placeholder="Ссылка на Quizlet">
+            <button onclick="addWord()">Добавить</button>
+        </div>
+    </div>
+
+    <script>
+        // Функция для добавления нового слова
+        function addWord() {
+            const word = document.getElementById('newWord').value;
+            const quizletLink = document.getElementById('quizletLink').value;
+            
+            if (word && quizletLink) {
+                const list = document.querySelector('.vocab-list');
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `<span>${word}</span> - <a href="${quizletLink}" target="_blank">Quizlet</a>`;
+                list.appendChild(listItem);
+
+                // Очищаем поля
+                document.getElementById('newWord').value = '';
+                document.getElementById('quizletLink').value = '';
+            } else {
+                alert('Пожалуйста, заполните оба поля!');
+            }
+        }
+    </script>
+
+</body>
+</html>
