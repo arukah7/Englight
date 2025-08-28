@@ -1,168 +1,68 @@
-body {
-    min-height: 100vh;
-    margin: 0;
-    font-family: 'Montserrat', Arial, sans-serif;
-    background: #ff49a6; /* Ярко-розовый */
-    color: #222;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: background 0.7s;
-}
+/* ...существующие стили... */
 
-.title-background {
-    display: inline-block;
-    background: linear-gradient(90deg, #fffde4 0%, #ffd700 100%);
-    padding: 22px 72px;
-    border-radius: 32px;
-    box-shadow: 0 8px 32px rgba(255,215,0,0.14);
-    margin-bottom: 38px;
-    min-width: 440px;
-    width: 85vw;
-    max-width: 900px;
-    animation: slideDown 1s cubic-bezier(.32,1.56,.53,.97);
-    opacity: 1;
-}
-
-@keyframes slideDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-70px) scale(0.94);
-    }
-    60% {
-        opacity: 0.7;
-        transform: translateY(20px) scale(1.04);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-h1 {
-    color: #ffef00; /* Ярко-жёлтый */
-    font-size: 4.2rem;
+/* СВЕТЛО-РОЗОВЫЙ ТИТУЛ */
+.light-pink-title {
+    color: #ffb6d5; /* светло-розовый */
+    font-size: 2.3rem; /* средний/крупный */
     font-weight: bold;
-    letter-spacing: 2px;
     margin: 0;
-    text-shadow: 3px 3px 16px #ffd70099, 0 1px 0 #fff;
-    animation: fadeIn 2s;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0;}
-    to { opacity: 1;}
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: inline-flex;
-    gap: 65px;
-}
-
-nav a {
-    color: #fff;
-    font-weight: bold;
-    background: #e63b7a;
-    border-radius: 14px;
     padding: 18px 44px;
-    text-decoration: none;
-    font-size: 1.6rem;
-    transition: background 0.3s, transform 0.3s;
-    box-shadow: 0 2px 16px #e63b7a55;
-    position: relative;
-    z-index: 1;
-}
-nav a:hover {
-    background: #ffe4ef;
-    color: #e63b7a;
-    transform: scale(1.12) translateY(-2px);
-    box-shadow: 0 8px 32px #e63b7a33;
+    background: #fff0f7;
+    border-radius: 32px;
+    box-shadow: 0 2px 16px #ffb6d577;
+    text-shadow: 1px 1px 5px #fff;
+    display: inline-block;
 }
 
-section {
-    background: rgba(255,255,255,0.93);
-    border-radius: 24px;
-    padding: 54px;
-    box-shadow: 0 2px 28px 0 rgba(0,0,0,0.09);
-    max-width: 950px;
-    margin: 54px auto;
+/* Округлый фон для блока названия */
+.rounded-title-bg {
+    background: linear-gradient(90deg, #fff0f7 0%, #ffb6d5 100%);
+    border-radius: 38px;
+    padding: 12px 0;
     text-align: center;
-    font-size: 1.7rem;
-    color: #222;
-    animation: fadeIn 1.3s;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 16px #ffb6d577;
 }
 
-h2 {
-    font-size: 2.6rem;
-    margin-bottom: 22px;
-    color: #e63b7a;
+/* Контакты: заголовок жёлтый */
+.yellow-contacts-title {
+    color: #ffd700;
+    font-size: 2rem;
     font-weight: bold;
-    text-shadow: 1px 1px 6px #fff;
-    animation: fadeIn 2.2s;
+    margin-bottom: 14px;
+    text-shadow: 1px 1px 7px #fffde4;
 }
 
+/* Контакты: уменьшенный размер элементов */
 .contacts {
     background: linear-gradient(90deg, #fffde4 0%, #ffd700 100%);
     color: #e63b7a;
     border-radius: 24px;
-    padding: 64px;
+    padding: 38px;
     box-shadow: 0 2px 32px 0 #ffd70033;
-    max-width: 950px;
-    margin: 54px auto;
+    max-width: 850px;
+    margin: 44px auto;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.25rem;
     animation: fadeIn 1.8s;
 }
-
-.contacts h3 {
-    color: #e63b7a;
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 16px;
-}
-
 .contacts a {
-    color: #e63b7a;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 0 14px;
-    font-size: 1.4rem;
-    transition: color 0.2s;
-}
-.contacts a:hover {
-    color: #ff49a6;
-    text-decoration: underline;
+    font-size: 1.1rem;
+    margin: 0 10px;
 }
 
+/* Секции и заголовки: средний размер */
+section {
+    font-size: 1.2rem;
+    padding: 38px;
+    max-width: 850px;
+}
+h2 {
+    font-size: 2.1rem;
+}
 button {
-    background: #e63b7a;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 12px;
-    padding: 20px 44px;
-    margin-top: 30px;
-    font-size: 1.7rem;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
-    box-shadow: 0 2px 16px #e63b7a55;
-}
-button:hover {
-    background: #ff49a6;
-    transform: scale(1.08);
-    box-shadow: 0 8px 32px #ff49a655;
+    font-size: 1.2rem;
+    padding: 13px 32px;
 }
 
-.project-image img {
-    width: 100%;
-    max-width: 700px;
-    border-radius: 18px;
-    margin-top: 36px;
-    box-shadow: 0 2px 24px rgba(0,0,0,0.13);
-    border: 8px solid #fff;
-    animation: fadeIn 2.2s;
-}
+/* ...остальные стили... */
