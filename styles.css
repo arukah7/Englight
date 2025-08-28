@@ -7,26 +7,44 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .main-bg {
     background: #ffe4ef; /* нежно-розовый */
-    color: #fff;
+    color: #222; /* тёмный текст для контраста */
 }
+
 .other-bg {
     background: url('https://lh3.google.com/saves/AA8Ys244e53mxQyFRUvRZP2iH-cpRn721CJcjiAFsHLHlxY82Vxls58wPuAuaXS87sJuKtc0u8hey8kYsyHRQgki5JT6HDOQjIWC5VBYalY15SZh8zHUdeYJa7LH0fD7BwBGdLGx62SRnkN94SqQ_vU5Q0Aju3Pn=s1308-w736-h1308-n-k?authuser=0&source=sh%2Fx%2Fsaves%2Fuv%2Fm5%2F4&kgs=e34e5dcdf59ca61b') center/cover no-repeat fixed;
-    color: #fff;
+    color: #222; /* тёмный текст для контраста */
 }
+
 header {
     margin-top: 60px;
     margin-bottom: 50px;
     text-align: center;
 }
+
+.title-background {
+    display: inline-block;
+    background: linear-gradient(90deg, #fffde4 0%, #ffd700 100%);
+    padding: 16px 64px;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(255,215,0,0.10);
+    margin-bottom: 28px;
+    min-width: 400px;
+    width: 90vw;
+    max-width: 900px;
+}
+
 h1 {
-    color: #ffd700; /* жёлтый */
+    color: #fff200; /* более ярко-жёлтый */
     font-size: 4rem;
     font-weight: bold;
     letter-spacing: 2px;
-    margin-bottom: 28px;
+    margin: 0;
+    text-shadow: 2px 2px 12px #ffd70099, 0 1px 0 #fff;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -34,6 +52,7 @@ nav ul {
     display: inline-flex;
     gap: 55px;
 }
+
 nav a {
     color: #fff;
     font-weight: bold;
@@ -44,11 +63,13 @@ nav a {
     font-size: 1.6rem;
     transition: background 0.2s;
 }
+
 nav a:hover {
     background: #ff80b3;
 }
+
 section, .contacts {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.90); /* белый с прозрачностью */
     border-radius: 24px;
     padding: 50px;
     box-shadow: 0 2px 28px 0 rgba(0,0,0,0.12);
@@ -56,16 +77,22 @@ section, .contacts {
     margin: 48px auto;
     text-align: center;
     font-size: 1.7rem;
+    color: #222; /* тёмный текст для контраста */
 }
+
 h2 {
     font-size: 2.6rem;
     margin-bottom: 22px;
     color: #e63b7a;
+    font-weight: bold;
+    text-shadow: 1px 1px 6px #fff;
 }
+
 .contacts h3 {
     color: #e63b7a; /* темно-розовый */
     font-size: 2.2rem;
 }
+
 .contacts a {
     color: #e63b7a;
     font-weight: bold;
@@ -73,9 +100,11 @@ h2 {
     margin: 0 14px;
     font-size: 1.4rem;
 }
+
 .contacts a:hover {
     color: #ffd700;
 }
+
 button {
     background: #e63b7a;
     color: #fff;
@@ -87,9 +116,11 @@ button {
     font-size: 1.6rem;
     cursor: pointer;
 }
+
 button:hover {
     background: #ff80b3;
 }
+
 .project-image img {
     width: 100%;
     max-width: 720px;
