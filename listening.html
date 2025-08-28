@@ -1,46 +1,58 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EngLight - Listening</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Listening</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://i.pinimg.com/originals/44/Q8/yH/44Q8yHCGU.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+    }
+    header {
+      padding: 20px;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    nav a {
+      margin: 15px;
+      font-size: 24px;
+      text-decoration: none;
+      color: white;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      margin-top: 60px;
+      font-size: 24px;
+    }
+    iframe {
+      margin-top: 20px;
+      width: 80%;
+      max-width: 800px;
+      height: 450px;
+      border-radius: 15px;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-
-    <header>
-        <h1>EngLight - Listening</h1>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Main</a></li>
-                <li><a href="./reading.html">Reading</a></li>
-                <li><a href="./listening.html">Listening</a></li>
-                <li><a href="./vocabulary.html">Vocabulary</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="listening-content">
-        <h2>Listen and learn!</h2>
-        
-        <!-- Аудиофайл -->
-        <h3>Слушайте аудио:</h3>
-        <audio controls>
-            <source src="audio_ссылка.mp3" type="audio/mp3">
-            Ваш браузер не поддерживает аудио.
-        </audio>
-
-        <!-- Видео -->
-        <h3>Посмотрите видео:</h3>
-        <video width="600" controls>
-            <source src="https://t.me/englishlightwithus/42.mp4" type="video/mp4">
-            Ваш браузер не поддерживает тег video.
-        </video>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 EngLight. Все права защищены.</p>
-    </footer>
-    
+  <header>Listening 🎧</header>
+  <nav>
+    <a href="index.html">Main</a>
+    <a href="reading.html">Reading</a>
+    <a href="vocabulary.html">Vocabulary</a>
+  </nav>
+  <main>
+    <h2>Listening Practice</h2>
+    <p>Watch the video below:</p>
+    <iframe src="https://www.youtube.com/embed/Lt1s2ouBSLs" allowfullscreen></iframe>
+  </main>
 </body>
 </html>
