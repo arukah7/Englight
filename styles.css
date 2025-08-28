@@ -2,47 +2,57 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: 'Montserrat', Arial, sans-serif;
+    background: #ff49a6; /* Ярко-розовый */
+    color: #222;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.main-bg {
-    background: #ffe4ef; /* нежно-розовый */
-    color: #222; /* тёмный текст для контраста */
-}
-
-.other-bg {
-    background: url('https://lh3.google.com/saves/AA8Ys244e53mxQyFRUvRZP2iH-cpRn721CJcjiAFsHLHlxY82Vxls58wPuAuaXS87sJuKtc0u8hey8kYsyHRQgki5JT6HDOQjIWC5VBYalY15SZh8zHUdeYJa7LH0fD7BwBGdLGx62SRnkN94SqQ_vU5Q0Aju3Pn=s1308-w736-h1308-n-k?authuser=0&source=sh%2Fx%2Fsaves%2Fuv%2Fm5%2F4&kgs=e34e5dcdf59ca61b') center/cover no-repeat fixed;
-    color: #222; /* тёмный текст для контраста */
-}
-
-header {
-    margin-top: 60px;
-    margin-bottom: 50px;
-    text-align: center;
+    transition: background 0.7s;
 }
 
 .title-background {
     display: inline-block;
     background: linear-gradient(90deg, #fffde4 0%, #ffd700 100%);
-    padding: 16px 64px;
-    border-radius: 24px;
-    box-shadow: 0 4px 24px rgba(255,215,0,0.10);
-    margin-bottom: 28px;
-    min-width: 400px;
-    width: 90vw;
+    padding: 22px 72px;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px rgba(255,215,0,0.14);
+    margin-bottom: 38px;
+    min-width: 440px;
+    width: 85vw;
     max-width: 900px;
+    animation: slideDown 1s cubic-bezier(.32,1.56,.53,.97);
+    opacity: 1;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-70px) scale(0.94);
+    }
+    60% {
+        opacity: 0.7;
+        transform: translateY(20px) scale(1.04);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 h1 {
-    color: #fff200; /* более ярко-жёлтый */
-    font-size: 4rem;
+    color: #ffef00; /* Ярко-жёлтый */
+    font-size: 4.2rem;
     font-weight: bold;
     letter-spacing: 2px;
     margin: 0;
-    text-shadow: 2px 2px 12px #ffd70099, 0 1px 0 #fff;
+    text-shadow: 3px 3px 16px #ffd70099, 0 1px 0 #fff;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to { opacity: 1;}
 }
 
 nav ul {
@@ -50,34 +60,40 @@ nav ul {
     padding: 0;
     margin: 0;
     display: inline-flex;
-    gap: 55px;
+    gap: 65px;
 }
 
 nav a {
     color: #fff;
     font-weight: bold;
-    background: #e63b7a; /* темно-розовый */
-    border-radius: 12px;
-    padding: 16px 38px;
+    background: #e63b7a;
+    border-radius: 14px;
+    padding: 18px 44px;
     text-decoration: none;
     font-size: 1.6rem;
-    transition: background 0.2s;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 2px 16px #e63b7a55;
+    position: relative;
+    z-index: 1;
 }
-
 nav a:hover {
-    background: #ff80b3;
+    background: #ffe4ef;
+    color: #e63b7a;
+    transform: scale(1.12) translateY(-2px);
+    box-shadow: 0 8px 32px #e63b7a33;
 }
 
-section, .contacts {
-    background: rgba(255, 255, 255, 0.90); /* белый с прозрачностью */
+section {
+    background: rgba(255,255,255,0.93);
     border-radius: 24px;
-    padding: 50px;
-    box-shadow: 0 2px 28px 0 rgba(0,0,0,0.12);
+    padding: 54px;
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,0.09);
     max-width: 950px;
-    margin: 48px auto;
+    margin: 54px auto;
     text-align: center;
     font-size: 1.7rem;
-    color: #222; /* тёмный текст для контраста */
+    color: #222;
+    animation: fadeIn 1.3s;
 }
 
 h2 {
@@ -86,11 +102,27 @@ h2 {
     color: #e63b7a;
     font-weight: bold;
     text-shadow: 1px 1px 6px #fff;
+    animation: fadeIn 2.2s;
+}
+
+.contacts {
+    background: linear-gradient(90deg, #fffde4 0%, #ffd700 100%);
+    color: #e63b7a;
+    border-radius: 24px;
+    padding: 64px;
+    box-shadow: 0 2px 32px 0 #ffd70033;
+    max-width: 950px;
+    margin: 54px auto;
+    text-align: center;
+    font-size: 1.6rem;
+    animation: fadeIn 1.8s;
 }
 
 .contacts h3 {
-    color: #e63b7a; /* темно-розовый */
+    color: #e63b7a;
     font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
 }
 
 .contacts a {
@@ -99,10 +131,11 @@ h2 {
     text-decoration: none;
     margin: 0 14px;
     font-size: 1.4rem;
+    transition: color 0.2s;
 }
-
 .contacts a:hover {
-    color: #ffd700;
+    color: #ff49a6;
+    text-decoration: underline;
 }
 
 button {
@@ -111,21 +144,25 @@ button {
     font-weight: bold;
     border: none;
     border-radius: 12px;
-    padding: 18px 40px;
+    padding: 20px 44px;
     margin-top: 30px;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 2px 16px #e63b7a55;
 }
-
 button:hover {
-    background: #ff80b3;
+    background: #ff49a6;
+    transform: scale(1.08);
+    box-shadow: 0 8px 32px #ff49a655;
 }
 
 .project-image img {
     width: 100%;
-    max-width: 720px;
-    border-radius: 14px;
+    max-width: 700px;
+    border-radius: 18px;
     margin-top: 36px;
-    box-shadow: 0 2px 24px rgba(0,0,0,0.11);
+    box-shadow: 0 2px 24px rgba(0,0,0,0.13);
     border: 8px solid #fff;
+    animation: fadeIn 2.2s;
 }
