@@ -12,7 +12,7 @@ body {
     color: #fff;
 }
 .other-bg {
-    background: url('https://i.pinimg.com/originals/44/44Q8yHCGU.jpg') center/cover no-repeat fixed;
+    background: url('https://lh3.google.com/saves/AA8Ys244e53mxQyFRUvRZP2iH-cpRn721CJcjiAFsHLHlxY82Vxls58wPuAuaXS87sJuKtc0u8hey8kYsyHRQgki5JT6HDOQjIWC5VBYalY15SZh8zHUdeYJa7LH0fD7BwBGdLGx62SRnkN94SqQ_vU5Q0Aju3Pn=s1308-w736-h1308-n-k?authuser=0&source=sh%2Fx%2Fsaves%2Fuv%2Fm5%2F4&kgs=e34e5dcdf59ca61b') center/cover no-repeat fixed;
     color: #fff;
 }
 header {
@@ -48,20 +48,20 @@ nav a:hover {
     background: #ff80b3;
 }
 section, .contacts {
-    background: rgba(50, 5, 41, 0.58); /* тёмно-розовый с прозрачностью */
+    background: rgba(255, 255, 255, 0.8); /* белый с прозрачностью */
     border-radius: 15px;
     padding: 30px;
-    box-shadow: 0 2px 15px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,0.10);
     max-width: 600px;
     margin: 30px auto;
     text-align: center;
 }
 .contacts h3 {
-    color: #ffd700;
+    color: #e63b7a; /* темно-розовый */
     font-size: 1.6rem;
 }
 .contacts a {
-    color: #ff80b3;
+    color: #e63b7a;
     font-weight: bold;
     text-decoration: none;
     margin: 0 7px;
