@@ -2,8 +2,8 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: 'Montserrat', Arial, sans-serif;
-    background: #ff49a6; /* Ярко-розовый */
-    color: #222;
+    background: #ffd6e4; /* Нежно-розовый фон */
+    color: #d21e79; /* Темно-розовый текст */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,12 +11,48 @@ body {
     transition: background 0.7s;
 }
 
+section {
+    background: #fff; /* Белый фон текстов */
+    border-radius: 24px;
+    padding: 54px;
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,0.09);
+    max-width: 950px;
+    margin: 54px auto;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #d21e79; /* Темно-розовый текст */
+    animation: fadeIn 1.3s;
+}
+
+h1 {
+    color: #ffef00; /* Ярко-жёлтый название страниц */
+    font-size: 4.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 3px 3px 16px #ffd70099, 0 1px 0 #fff;
+    animation: shine 2.5s infinite alternate, fadeIn 2s;
+}
+
+/* Shine animation for h1 */
+@keyframes shine {
+    0% {
+        text-shadow: 0 0 18px #ffd700, 0 1px 0 #fff;
+    }
+    50% {
+        text-shadow: 0 0 36px #fff700, 0 1px 0 #fff;
+    }
+    100% {
+        text-shadow: 0 0 18px #ffd700, 0 1px 0 #fff;
+    }
+}
+
 .title-background {
     display: inline-block;
-    background: linear-gradient(90deg, #fffde4 0%, #ffd700 100%);
+    background: #d21e79; /* Фон названия страниц - темно-розовый */
     padding: 22px 72px;
     border-radius: 32px;
-    box-shadow: 0 8px 32px rgba(255,215,0,0.14);
+    box-shadow: 0 8px 32px rgba(210,30,121,0.18);
     margin-bottom: 38px;
     min-width: 440px;
     width: 85vw;
@@ -38,16 +74,6 @@ body {
         opacity: 1;
         transform: translateY(0) scale(1);
     }
-}
-
-h1 {
-    color: #ffef00; /* Ярко-жёлтый */
-    font-size: 4.2rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin: 0;
-    text-shadow: 3px 3px 16px #ffd70099, 0 1px 0 #fff;
-    animation: fadeIn 2s;
 }
 
 @keyframes fadeIn {
@@ -83,17 +109,21 @@ nav a:hover {
     box-shadow: 0 8px 32px #e63b7a33;
 }
 
-section {
-    background: rgba(255,255,255,0.93);
-    border-radius: 24px;
-    padding: 54px;
-    box-shadow: 0 2px 28px 0 rgba(0,0,0,0.09);
-    max-width: 950px;
-    margin: 54px auto;
-    text-align: center;
-    font-size: 1.7rem;
-    color: #222;
-    animation: fadeIn 1.3s;
+/* Ярко-жёлтый для main, reading, vocabulary, listening */
+nav a.main,
+nav a.reading,
+nav a.vocabulary,
+nav a.listening {
+    color: #ffef00 !important;
+    background: #d21e79 !important;
+    box-shadow: 0 2px 16px #d21e7955;
+}
+nav a.main:hover,
+nav a.reading:hover,
+nav a.vocabulary:hover,
+nav a.listening:hover {
+    background: #ffe4ef !important;
+    color: #ff49a6 !important;
 }
 
 h2 {
@@ -105,9 +135,10 @@ h2 {
     animation: fadeIn 2.2s;
 }
 
+/* Контакты */
 .contacts {
-    background: linear-gradient(90deg, #fffde4 0%, #ffd700 100%);
-    color: #e63b7a;
+    background: #fff; /* Белый фон */
+    color: #d21e79; /* Темно-розовый текст */
     border-radius: 24px;
     padding: 64px;
     box-shadow: 0 2px 32px 0 #ffd70033;
@@ -118,15 +149,17 @@ h2 {
     animation: fadeIn 1.8s;
 }
 
+/* Название "Контакты" ярко-жёлтое */
 .contacts h3 {
-    color: #e63b7a;
+    color: #ffef00;
     font-size: 2.2rem;
     font-weight: bold;
     margin-bottom: 16px;
 }
 
+/* Отметки - фиолетовые, при наведении — розовые */
 .contacts a {
-    color: #e63b7a;
+    color: #7a3aff; /* Фиолетовый */
     font-weight: bold;
     text-decoration: none;
     margin: 0 14px;
@@ -134,7 +167,7 @@ h2 {
     transition: color 0.2s;
 }
 .contacts a:hover {
-    color: #ff49a6;
+    color: #ff49a6; /* Розовый при наведении */
     text-decoration: underline;
 }
 
@@ -157,12 +190,45 @@ button:hover {
     box-shadow: 0 8px 32px #ff49a655;
 }
 
+/* Фото проекта: рамка фиолетовая, анимация появления */
 .project-image img {
     width: 100%;
     max-width: 700px;
     border-radius: 18px;
     margin-top: 36px;
     box-shadow: 0 2px 24px rgba(0,0,0,0.13);
-    border: 8px solid #fff;
-    animation: fadeIn 2.2s;
+    border: 8px solid #7a3aff; /* Фиолетовая рамка */
+    animation: projectAppear 2.5s;
 }
+
+/* Анимация появления фото проекта */
+@keyframes projectAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0.92);
+        box-shadow: 0 0 0 #7a3aff;
+    }
+    60% {
+        opacity: 0.7;
+        transform: scale(1.06);
+        box-shadow: 0 0 36px #7a3aff99;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        box-shadow: 0 2px 24px rgba(0,0,0,0.13);
+    }
+}
+
+/* Для названия страниц English Light With Us – если отдельный селектор, например .page-title */
+.page-title {
+    color: #ffef00;
+    background: #d21e79;
+    padding: 22px 72px;
+    border-radius: 32px;
+    font-size: 4.2rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 16px #ffd70099, 0 1px 0 #fff;
+    animation: shine 2.5s infinite alternate, fadeIn 2s;
+    }
+    
