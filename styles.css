@@ -30,11 +30,11 @@ h1 {
     font-weight: bold;
     letter-spacing: 2px;
     margin: 0;
-    text-shadow: 3px 3px 16px #ffd70099, 0 1px 0 #fff;
-    animation: shine 2.5s infinite alternate, fadeIn 2s;
+    /* text-shadow: 3px 3px 16px #ffd70099, 0 1px 0 #fff; убрано сияние */
+    animation: fadeIn 2s;
 }
 
-/* Shine animation for h1 */
+/* Shine animation for .page-title ONLY */
 @keyframes shine {
     0% {
         text-shadow: 0 0 18px #ffd700, 0 1px 0 #fff;
@@ -109,11 +109,12 @@ nav a:hover {
     box-shadow: 0 8px 32px #e63b7a33;
 }
 
-/* Ярко-жёлтый для main, reading, vocabulary, listening */
+/* Ярко-жёлтый для main, reading, vocabulary, listening, contacts */
 nav a.main,
 nav a.reading,
 nav a.vocabulary,
-nav a.listening {
+nav a.listening,
+nav a.contacts {
     color: #ffef00 !important;
     background: #d21e79 !important;
     box-shadow: 0 2px 16px #d21e7955;
@@ -121,7 +122,8 @@ nav a.listening {
 nav a.main:hover,
 nav a.reading:hover,
 nav a.vocabulary:hover,
-nav a.listening:hover {
+nav a.listening:hover,
+nav a.contacts:hover {
     background: #ffe4ef !important;
     color: #ff49a6 !important;
 }
@@ -226,9 +228,8 @@ button:hover {
     background: #d21e79;
     padding: 22px 72px;
     border-radius: 32px;
-    font-size: 4.2rem;
+    font-size: 5.2rem; /* стало выше */
     font-weight: bold;
     text-shadow: 3px 3px 16px #ffd70099, 0 1px 0 #fff;
     animation: shine 2.5s infinite alternate, fadeIn 2s;
     }
-    
