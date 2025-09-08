@@ -11,4 +11,15 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('header h1').style.transition = 'opacity 2s';
         document.querySelector('header h1').style.opacity = 1;
     }, 200);
+}
+                          
+// Анимация появления для надписи Welcome to EngLight! (hero-title)
+document.addEventListener('DOMContentLoaded', function() {
+    const heroTitle = document.querySelector('.hero-title');
+    if(heroTitle){
+        heroTitle.style.opacity = 0;
+        setTimeout(function() {
+            heroTitle.style.opacity = 1;
+        }, 200);
+    }
 });
