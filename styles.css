@@ -1,3 +1,104 @@
+/* --- Новые стили для новых изменений (добавить СВЕРХУ файла) --- */
+
+/* 1. Фон статьи розовый, текст чёрный */
+.reading-article {
+    background: #ffd6e4 !important; /* Нежно-розовый фон */
+    color: #222 !important;         /* Чёрный текст */
+    border-radius: 24px;
+    padding: 54px;
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,0.09);
+    max-width: 950px;
+    margin: 54px auto;
+    text-align: left;
+    font-size: 1.7rem;
+    animation: fadeIn 1.3s, textFadeIn 2s;
+}
+
+/* 2. Белый фон текста "Welcome to EngLight" */
+.welcome-title {
+    background: #fff;
+    color: #ffef00 !important;
+    font-size: 4.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    border-radius: 32px;
+    padding: 16px 64px;
+    box-shadow: 0 8px 32px rgba(210,30,121,0.18);
+    text-shadow: 3px 3px 16px #ffd70099, 0 1px 0 #fff;
+    animation: fadeIn 2s, textFadeIn 2s;
+    display: inline-block;
+}
+
+/* 3. Адаптация размеров шрифтов для мобильных устройств */
+@media (max-width: 600px) {
+    .welcome-title {
+        font-size: 2.3rem;
+        padding: 10px 24px;
+    }
+    .reading-article, section, .contacts, .vocabulary-idioms {
+        font-size: 1.1rem !important;
+        padding: 22px !important;
+        max-width: 98vw !important;
+    }
+    h1, .page-title {
+        font-size: 2.2rem !important;
+        padding: 10px 24px !important;
+    }
+    h2, .vocabulary-idioms-title {
+        font-size: 1.1rem !important;
+    }
+}
+
+/* 4. Анимация для текстов раздела (чтение, словарь, слушание, главная) */
+@keyframes textFadeIn {
+    0% { opacity: 0; transform: translateY(30px) scale(0.97);}
+    60% { opacity: 0.7; transform: translateY(-10px) scale(1.03);}
+    100% { opacity: 1; transform: translateY(0) scale(1);}
+}
+
+.reading-article,
+.vocabulary-idioms,
+.listening-section,
+.main-section {
+    animation: textFadeIn 2.2s;
+}
+
+/* Если ваши секции имеют id или класс, например: */
+#reading, #vocabulary, #listening, #main, .reading-article, .vocabulary-idioms, .listening-section, .main-section {
+    animation: textFadeIn 2.2s;
+}
+
+/* 5. Разделение фона "Контакты" от фона информации про проект */
+.project-info {
+    background: #fff;
+    color: #d21e79;
+    border-radius: 24px;
+    padding: 54px;
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,0.09);
+    max-width: 950px;
+    margin: 54px auto 0 auto;
+    text-align: center;
+    font-size: 1.6rem;
+    animation: fadeIn 1.3s, textFadeIn 1.5s;
+}
+
+/* Контакты идут с отступом и отдельным фоном */
+.contacts {
+    background: #fff; /* Белый фон */
+    color: #d21e79; /* Темно-розовый текст */
+    border-radius: 24px;
+    padding: 64px;
+    box-shadow: 0 2px 32px 0 #ffd70033;
+    max-width: 950px;
+    margin: 54px auto 54px auto;
+    text-align: center;
+    font-size: 1.6rem;
+    animation: fadeIn 1.8s, textFadeIn 2s;
+    border-top: 10px solid #ffd6e4; /* Розовый верхний бордер для визуального разделения */
+}
+
+/* --- Далее идут предыдущие стили --- */
 /* 1. Ярко-жёлтый для "Welcome to EngLight!" */
 .welcome-title {
     color: #ffef00 !important;
