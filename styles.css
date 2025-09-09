@@ -1,3 +1,67 @@
+/* 1. Ярко-жёлтый для "Welcome to EngLight!" */
+.welcome-title {
+    color: #ffef00 !important;
+    font-size: 4.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 3px 3px 16px #ffd70099, 0 1px 0 #fff;
+    animation: fadeIn 2s;
+}
+
+/* 3. Фон только статьи желтый, текст белый */
+.reading-article {
+    background: #ffef00 !important; /* Ярко-жёлтый фон */
+    color: #fff !important;         /* Белый текст */
+    border-radius: 24px;
+    padding: 54px;
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,0.09);
+    max-width: 950px;
+    margin: 54px auto;
+    text-align: left;
+    font-size: 1.7rem;
+    animation: fadeIn 1.3s;
+}
+
+/* 4. Фото над статьей */
+.reading-article-img {
+    display: block;
+    margin: 0 auto 36px auto;
+    max-width: 320px;
+    border-radius: 18px;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.13);
+    border: 8px solid #7a3aff;
+    animation: projectAppear 2.5s;
+}
+
+/* 5. Словарь из статьи, стили для списка идиом */
+.vocabulary-idioms {
+    background: #ffe4ef;
+    border-radius: 18px;
+    padding: 32px 44px;
+    margin: 32px auto;
+    max-width: 700px;
+    font-size: 1.3rem;
+    color: #d21e79;
+    box-shadow: 0 2px 24px #d21e7955;
+}
+.vocabulary-idioms-title {
+    color: #e63b7a;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.vocabulary-idioms ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.vocabulary-idioms li {
+    margin-bottom: 16px;
+    padding-left: 0;
+}
+
+/* ----- Оригинальные стили ниже ----- */
 body {
     min-height: 100vh;
     margin: 0;
