@@ -1,26 +1,83 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- В самом верху контента -->
-    <h1 class="welcome-title">Welcome to EngLight!</h1>
     <meta charset="UTF-8">
     <title>Welcome to EngLight!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Добавлен стиль для заголовка */
-        .dark-pink-title {
-            color: #C71585; /* темно-розовый (mediumvioletred) */
+        /* Стили для заголовка Welcome */
+        .welcome-highlight {
+            background-color: #e75480; /* насыщенный розовый */
+            color: #FFD700; /* ярко-желтый */
+            padding: 24px 0;
+            margin-bottom: 24px;
+            text-align: center;
+            border-radius: 18px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        }
+        /* Стили для мобильных устройств */
+        @media (max-width: 600px) {
+            body, .main-bg, section, header, .project-info, .contacts {
+                padding: 8px !important;
+                margin: 0 !important;
+            }
+            .welcome-highlight {
+                font-size: 1.6rem;
+                padding: 14px 0;
+            }
+            section, .project-info, .contacts {
+                font-size: 1rem;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                padding: 0;
+            }
+            .project-image img {
+                width: 100% !important;
+                max-width: 350px !important;
+                height: auto !important;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        /* Стили для разделения фонов */
+        .project-info {
+            background: linear-gradient(90deg, #ffe4e1 60%, #fff 100%);
+            box-shadow: 0 2px 8px rgba(231, 84, 128, 0.07);
+            padding: 20px;
+            border-radius: 18px;
+            margin-bottom: 20px;
+        }
+        .contacts {
+            background: linear-gradient(90deg, #fff9c4 60%, #fff 100%);
+            box-shadow: 0 2px 8px rgba(255, 215, 0, 0.07);
+            padding: 20px;
+            border-radius: 18px;
+            margin-bottom: 20px;
+        }
+        /* Для project-image в разделе Чтения — фото побольше */
+        .reading-image {
+            width: 420px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+            margin: 10px auto 20px auto;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.08);
         }
     </style>
 </head>
 <body class="main-bg">
+    <!-- Оставляем только ОДИН заголовок welcome -->
+    <div class="welcome-highlight">Welcome to EngLight!</div>
     <header>
-        <div class="title-background">
-            <h1 class="dark-pink-title">Welcome to EngLight!</h1>
-        </div>
         <nav>
-            <ul>
+            <ul style="display:flex; gap:24px; list-style:none; justify-content:center; padding:0; margin:0;">
                 <li><a href="./index.html">Main</a></li>
                 <li><a href="./reading.html">Reading</a></li>
                 <li><a href="./listening.html">Listening</a></li>
@@ -36,31 +93,31 @@
     <section>
         <h2></h2>
     <!-- Информация про проект -->
-<section class="project-info">
-  <h2>Информация про наш проект — ENGLIGHT</h2>
-  <p>Этот сайт создан для того, чтобы улучшить знания языка интересным и познавательным способом. Мы предлагаем эффективные методы для практики английского, которые включают чтение, прослушивание и изучение слов. Мы верим, что обучение может быть увлекательным и разнообразным!
-  </p>
-  <div class="project-image">
-    <img src="https://lh3.googleusercontent.com/rd-saves/AA8Ys254AyaEoW09blM8NzHKO1FPPEpvMztECEs0G8RPJxB5r79ch9xsZgh9L7vWVGKCwlecU3liuaiwhpTDETdC9dMhA4hwynwCEAFgBT2LXB-xgYvMjcyjv8uCDRw0qmGKHeLuwNDVllxKzWX-pYlaBqMAC-Gw02UtGWBv4gML88k2HlVimu10TyJ-ZaPJ2Lds2RSHRugJ8RUEs3Lr3eKehjosHGAh1g2se4nWwmnqH2nv5rjK5PXszhgu9MEq49YvHnBSD8Ws3nzF1HLKqimWeb4GK6a_0_JJRvybTt2Qsi-nvQKMCWgpTolPX1hpY1Ba5qgugdXGRyQ4Dk0CnC_UCVuUhj3MrQwbX51fS1swm7ReVWjA3qC12rRZm6NZFPdtz4k_CwVZbGkEaFXdi4goqgNIXbf3eFzFI94sU7zEjzGxPBtOVnhiXmi1WQlJU11kAcpLr76bFple49Lt_eUfW6TYH_TGZtQiFSTnZtCkLc-GSBI1V-LwHTDNvSfLk2pszzLdN-Zn6ZeI7osL0dudH_8LWau8b2qxRnEuvI0qBAaSaFTz4sqla0Z05Yg40IPLkR0RtX8Zoj9B3eamRbYQ6YLdGu7XR3cYiByqjFu_Bvv4H0KjubmC6oCTIIEUQdkfCWNl70k56y6K0__jgNN-2i-RGf9eersewt4fsKKlqZjBt5Eey9r4EY_ufy-UjDzXzyAnrz7DzmvpCzqcB22ASdHCQ8tfvqlmQAHqQA60LdQdG7QS_gOOIry0-99wQaWky750zmQ0blpj7bbikwVDSaFLXL8N0k8wY0uDjr8bxDdtCh4amdNy0pY7gk-O8fAtR0oHALV4hbs2u020VyVrLfD0PVS4lzSLl1tfbtkHqzIiW-I2qe6PcadwmzFb1SvRZKrQkWmBpLWV5vwUcbJ2TBXkJi-lBHbSZqzfVPFjpnUbyPk6_CkecBEQiBzkaN1q6Tc-QDp6JAlFBKgvyCh7aOpbn_b9Kzu3-Z0cz3nVASMgAp0Lsmmyl9IfkFkZp7ql8gYyckJY4uaTZ0eTjCHDzsDV4Fqj41Rs1h1TWiOwwZIieoFFN982Z8-R6OrWAxteBda9byfYsEJZkSPf6QeBo82E3ZD1zWIQT70gsb4kq7ASzk81QYR1J_Qbf4Odx2rHKX8=s720-w720-h720-n-k" alt="EngLight Project Image
-</div>
-</section>
+    <section class="project-info">
+      <h2>Информация про наш проект — ENGLIGHT</h2>
+      <p>Этот сайт создан для того, чтобы улучшить знания языка интересным и познавательным способом. Мы предлагаем интерактивные материалы, тесты и советы для эффективного изучения английского.</p>
+      <div class="project-image">
+        <!-- Если эта картинка используется в разделе чтения, добавьте класс reading-image -->
+        <img src="https://lh3.googleusercontent.com/rd-saves/AA8Ys254AyaEoW09blM8NzHKO1FPPEpvMztECEs0G8RPJxB5r79ch9xsZgh9L7vWVGKCwlecU3liuaiwhpTDETdC9dMhA4hwynwCEAFgBT2LXB-xgYvMjcyjv8uCDRw0qmGKHeLuwNDVllxg" alt="EngLight project" class="reading-image">
+      </div>
+    </section>
 
-<!-- Контакты идут ниже, отдельно -->
-<section class="contacts">
-  <h3>Contacts👀</h3>
-  <ul class="contact-links">
-            <li>
-                <strong>Founders Instagram:</strong>
-                <a href="https://instagram.com/arua.777" target="_blank">@arua.777</a>
-                <a href="https://instagram.com/abcdqwc" target="_blank">@abcdqwc</a>
-            </li>
-            <li>
-                <strong>Telegram channel:</strong>
-                <a href="https://t.me/englishlightwithus" target="_blank">@englishlightwithus</a>
-                <p>English is easy and interesting! Присоединяйтесь к нашему сообществу для регулярных советов, материалов и общения.
-            </li>
-        </ul>
+    <!-- Контакты идут ниже, отдельно -->
+    <section class="contacts">
+      <h3>Contacts👀</h3>
+      <ul class="contact-links">
+                <li>
+                    <strong>Founders Instagram:</strong>
+                    <a href="https://instagram.com/arua.777" target="_blank">@arua.777</a>
+                    <a href="https://instagram.com/abcdqwc" target="_blank">@abcdqwc</a>
+                </li>
+                <li>
+                    <strong>Telegram channel:</strong>
+                    <a href="https://t.me/englishlightwithus" target="_blank">@englishlightwithus</a>
+                    <p>English is easy and interesting! Присоединяйтесь к нашему сообществу для регулярных советов, материалов и общения.</p>
+                </li>
+            </ul>
+        </section>
     </section>
 </body>
-</html>
-</section>
+    </html>
